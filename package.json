@@ -1,0 +1,20 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "description": "\"It gives details about an individual\"",
+  "main": "UI.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dileep-294/JS-Assignment.git"
+  },
+  "author": "Dileep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dileep-294/JS-Assignment/issues"
+  },
+  "homepage": "https://github.com/dileep-294/JS-Assignment#readme"
+}
+  
