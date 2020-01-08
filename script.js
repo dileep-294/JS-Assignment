@@ -30,15 +30,15 @@ window.onscroll = function () {
         this.onload();
     }
 }
-addImage=function(img_data){
+addImage=function(avatar){
     const logo = document.createElement('img');
-     logo.src = img_data;
+     logo.src = avatar;
      logo.setAttribute('class','logo');
     return logo;
 }
-addName=function(f,l,t){
+addName=function(first_name,last_name,title){
     const spanE=document.createElement('div');
-    spanE.innerText=t+"."+" "+f+ " "+l;
+    spanE.innerText=title+"."+" "+first_name+ " "+last_name;
     spanE.setAttribute('class','spanE');
     return spanE;
 }
