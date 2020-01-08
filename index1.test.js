@@ -1,10 +1,10 @@
 const { addImage,addName } = require('./script');
 
-// test('DOM is setup', function () {
+test('DOM is setup', function () {
    
-//     addPerson("jallipalli","dileep","francisca.sanchez@example.com","Mr");
-//     expect(document.getElementsByClassName('container').length).toEqual(1);
-// });
+     addPerson("jallipalli","dileep","francisca.sanchez@example.com","Mr");
+     expect(document.getElementsByClassName('container').length).toEqual(1);
+ });
 test('check Image',function(){
     var y=document.getElementsByClassName('logo');
     expect(y).toBeTruthy();
