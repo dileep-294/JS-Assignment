@@ -14,10 +14,12 @@ function Loadmore() {
         for (var i = 0; i < data2.length; i++) {
             const container = document.createElement('div');
             container.setAttribute('class', 'container');
-            var x=addImage(data2[i].picture.large)
-            var y=addName(data2[i].name.last,data2[i].name.first,data2[i].name.title)
-            container.appendChild(x);
-            container.appendChild(y);
+            var avatar=addImage(data2[i].picture.large)
+            var fullName=addName(data2[i].name.last,data2[i].name.first,data2[i].name.title)
+            var email = addEmail(data2[i].email)
+            container.appendChild(avatar);
+            container.appendChild(fullName);
+            container.appendChild(email);
             app.appendChild(container);
 
         }
@@ -41,6 +43,12 @@ addName=function(first_name,last_name,title){
     spanE.innerText=title+"."+" "+first_name+ " "+last_name;
     spanE.setAttribute('class','spanE');
     return spanE;
+}
+addEmail=function(email){
+    const spanE1=document.createElement('div');
+    spanE1.innerText=email;
+    spanE1.setAttribute('class','spanE');
+    return spanE1;
 }
 
     module.exports={addImage,addName}
